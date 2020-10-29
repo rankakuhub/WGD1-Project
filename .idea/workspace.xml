@@ -10,13 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ba2a7e0-83ea-4803-84c9-a18dcaab3616" name="Default Changelist" comment="Del Java Folder">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/Main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/html/Development.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/html/Development.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/html/Game.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/html/Game.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/html/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/html/Main.html" afterDir="false" />
-    </list>
+    <list default="true" id="6ba2a7e0-83ea-4803-84c9-a18dcaab3616" name="Default Changelist" comment="Del Java Folder" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +70,7 @@
       <workItem from="1603358274138" duration="1902000" />
       <workItem from="1603360244101" duration="4661000" />
       <workItem from="1603965588503" duration="5525000" />
-      <workItem from="1603992847983" duration="1086000" />
+      <workItem from="1603992847983" duration="1405000" />
     </task>
     <task id="LOCAL-00001" summary="Change Heading">
       <created>1603364782765</created>
