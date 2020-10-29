@@ -10,7 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ba2a7e0-83ea-4803-84c9-a18dcaab3616" name="Default Changelist" comment="Change Heading" />
+    <list default="true" id="6ba2a7e0-83ea-4803-84c9-a18dcaab3616" name="Default Changelist" comment="Added Development">
+      <change afterPath="$PROJECT_DIR$/public/content/fonts/DS-DIGI.TTF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -51,6 +54,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\WGD1-Project\public\content\fonts" />
       <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\Project\public" />
       <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\Project\src\java" />
     </key>
@@ -65,7 +69,8 @@
       <updated>1603357028233</updated>
       <workItem from="1603357029270" duration="1179000" />
       <workItem from="1603358274138" duration="1902000" />
-      <workItem from="1603360244101" duration="3483000" />
+      <workItem from="1603360244101" duration="4661000" />
+      <workItem from="1603965588503" duration="2165000" />
     </task>
     <task id="LOCAL-00001" summary="Change Heading">
       <created>1603364782765</created>
@@ -74,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603364782765</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Development">
+      <created>1603365270381</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603365270381</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,10 +102,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Change Heading" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change Heading" />
+    <MESSAGE value="Added Development" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Development" />
   </component>
   <component name="WindowStateProjectService">
     <state x="715" y="344" key="#Notifications" timestamp="1603358640084">
@@ -120,10 +134,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="588" y="91" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603363784731" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603364790069">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603365273153">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603364790069" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603365273153" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603364720213">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
