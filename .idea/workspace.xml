@@ -51,6 +51,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\WGD1-Project\public" />
       <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\WGD1-Project\public\content\images" />
       <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\WGD1-Project\public\content\fonts" />
       <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\Project\public" />
@@ -68,7 +69,7 @@
       <workItem from="1603357029270" duration="1179000" />
       <workItem from="1603358274138" duration="1902000" />
       <workItem from="1603360244101" duration="4661000" />
-      <workItem from="1603965588503" duration="5210000" />
+      <workItem from="1603965588503" duration="5525000" />
     </task>
     <task id="LOCAL-00001" summary="Change Heading">
       <created>1603364782765</created>
@@ -119,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603970691981</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Del Java Folder">
+      <created>1603970978245</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1603970978245</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,11 +197,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="588" y="91" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603363784731" />
-    <state x="892" y="153" key="Vcs.Push.Dialog.v2" timestamp="1603970693076">
+    <state x="892" y="153" key="Vcs.Push.Dialog.v2" timestamp="1603970980605">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603365273153" />
-    <state x="892" y="153" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603970693076" />
+    <state x="892" y="153" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603970980605" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603968753306">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
