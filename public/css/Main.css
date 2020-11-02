@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
 
 :root {
     --background: rgba(255, 30, 170, .85);
@@ -10,7 +11,7 @@
 
 body {
     margin: 0;
-    background: #222;
+    background: #000000;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
 }
@@ -190,5 +191,6 @@ nav a:hover {
     nav a:hover::before {
         transform: scale(1,1);
     }
+
 }
 
