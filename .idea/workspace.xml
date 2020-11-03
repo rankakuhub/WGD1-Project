@@ -29,6 +29,9 @@
     <list default="true" id="6ba2a7e0-83ea-4803-84c9-a18dcaab3616" name="Default Changelist" comment="Attempting to put Back to Top, currently not working &#10;&#10;Tutorial used - https://www.youtube.com/watch?v=SJVCvnKM_lI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/Main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/html/Development.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/html/Development.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/html/Game.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/html/Game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/html/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/html/Main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +82,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/css" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -103,6 +106,16 @@
       <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\StudentExample1\StudentExample1\src\css" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Main.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WGD1-Project/public/html/Main.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.Main.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -118,6 +131,9 @@
       <workItem from="1604237281585" duration="65000" />
       <workItem from="1604237503496" duration="458000" />
       <workItem from="1604307916102" duration="7839000" />
+      <workItem from="1604396865588" duration="1516000" />
+      <workItem from="1604408516014" duration="700000" />
+      <workItem from="1604409349142" duration="3633000" />
     </task>
     <task id="LOCAL-00001" summary="Change Heading">
       <created>1603364782765</created>
@@ -196,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604312950570</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Attempting to put Back to Top, currently not working &#10;&#10;Tutorial used - https://www.youtube.com/watch?v=SJVCvnKM_lI">
+      <created>1604324610275</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1604324610275</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,16 +307,48 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="894" y="270" key="Github.UntrackedFilesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603359697866" />
+    <state width="949" height="282" key="GridCell.Tab.0.bottom" timestamp="1604410508769">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604410508769" />
+    <state width="949" height="282" key="GridCell.Tab.0.center" timestamp="1604410508768">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604410508768" />
+    <state width="949" height="282" key="GridCell.Tab.0.left" timestamp="1604410508768">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604410508768" />
+    <state width="949" height="282" key="GridCell.Tab.0.right" timestamp="1604410508769">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604410508769" />
+    <state width="949" height="282" key="GridCell.Tab.1.bottom" timestamp="1604410508769">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604410508769" />
+    <state width="949" height="282" key="GridCell.Tab.1.center" timestamp="1604410508769">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604410508769" />
+    <state width="949" height="282" key="GridCell.Tab.1.left" timestamp="1604410508769">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604410508769" />
+    <state width="949" height="282" key="GridCell.Tab.1.right" timestamp="1604410508769">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604410508769" />
     <state x="588" y="91" key="SettingsEditor" timestamp="1604316359809">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="588" y="91" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603363784731" />
     <state x="588" y="91" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604316359809" />
-    <state x="892" y="153" key="Vcs.Push.Dialog.v2" timestamp="1604322393123">
+    <state x="892" y="153" key="Vcs.Push.Dialog.v2" timestamp="1604324614771">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603365273153" />
-    <state x="892" y="153" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604322393123" />
+    <state x="892" y="153" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604324614771" />
     <state x="736" y="138" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1604316357770">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

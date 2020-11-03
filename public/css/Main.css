@@ -10,20 +10,38 @@
 
 body {
     margin: 0;
-    background: #222;
+    color : #ffffff;
+    background: #333;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
 }
 
 .content {
-    height: 75vh;
-   /* background-image: url(//unsplash.it/1000/1000); */
+
+    /* background-image: url(//unsplash.it/1000/1000); */
+    height: 25vh;
     background-color: #333;
     background-blend-mode: multiply;
     background-size: cover;
     display: grid;
     place-items: center;
 }
+#summaryContent {
+    width: 40%;
+    margin-right: 300px;
+    margin-left: 1000px;
+}
+#summaryTitle{
+    margin-right: 300px;
+    margin-left: 1280px;
+}
+#placeholder {
+    position: absolute;
+    width: 25%;
+    top: 20%;
+    right: 65%;
+}
+
 
 /* navigation styles start here */
 
@@ -191,4 +209,3 @@ nav a:hover {
         transform: scale(1,1);
     }
 }
-
