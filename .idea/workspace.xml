@@ -26,12 +26,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ba2a7e0-83ea-4803-84c9-a18dcaab3616" name="Default Changelist" comment="Attempting to put Back to Top, currently not working &#10;&#10;Tutorial used - https://www.youtube.com/watch?v=SJVCvnKM_lI">
+    <list default="true" id="6ba2a7e0-83ea-4803-84c9-a18dcaab3616" name="Default Changelist" comment="Placeholder Home Menu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/Main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/html/Development.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/html/Development.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/html/Game.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/html/Game.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/html/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/html/Main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +130,7 @@
       <workItem from="1604307916102" duration="7839000" />
       <workItem from="1604396865588" duration="1516000" />
       <workItem from="1604408516014" duration="700000" />
-      <workItem from="1604409349142" duration="3633000" />
+      <workItem from="1604409349142" duration="4518000" />
     </task>
     <task id="LOCAL-00001" summary="Change Heading">
       <created>1603364782765</created>
@@ -219,7 +216,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604324610275</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Placeholder Home Menu">
+      <created>1604413071817</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1604413071817</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Placeholder Home Menu">
+      <created>1604413095119</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1604413095119</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,7 +295,8 @@
     <MESSAGE value="Able to Get Css on Main" />
     <MESSAGE value="Footer" />
     <MESSAGE value="Attempting to put Back to Top, currently not working &#10;&#10;Tutorial used - https://www.youtube.com/watch?v=SJVCvnKM_lI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Attempting to put Back to Top, currently not working &#10;&#10;Tutorial used - https://www.youtube.com/watch?v=SJVCvnKM_lI" />
+    <MESSAGE value="Placeholder Home Menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Placeholder Home Menu" />
   </component>
   <component name="WindowStateProjectService">
     <state x="715" y="344" key="#Notifications" timestamp="1603358640084">
@@ -344,11 +356,11 @@
     </state>
     <state x="588" y="91" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603363784731" />
     <state x="588" y="91" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604316359809" />
-    <state x="892" y="153" key="Vcs.Push.Dialog.v2" timestamp="1604324614771">
+    <state x="892" y="153" key="Vcs.Push.Dialog.v2" timestamp="1604413121477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603365273153" />
-    <state x="892" y="153" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604324614771" />
+    <state x="892" y="153" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604413121477" />
     <state x="736" y="138" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1604316357770">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
