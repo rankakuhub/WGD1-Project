@@ -26,9 +26,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ba2a7e0-83ea-4803-84c9-a18dcaab3616" name="Default Changelist" comment="Placeholder Home Menu">
+    <list default="true" id="6ba2a7e0-83ea-4803-84c9-a18dcaab3616" name="Default Changelist" comment="Updated README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +78,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -87,20 +86,20 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
+    <property name="settings.editor.selected.configurable" value="org.plantuml.idea.lang.settings.PlantUmlSettingsPage" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\WGD1-Project\public\css" />
+      <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\StudentExample1\StudentExample1\src\css" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\WGD1-Project\public\js\libs" />
       <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\WGD1-Project\public\js" />
       <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\WGD1-Project\public" />
       <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\WGD1-Project\public\content\images" />
       <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\WGD1-Project\public\content\fonts" />
-      <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\Project\public" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\WGD1-Project\public\css" />
-      <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\StudentExample1\StudentExample1\src\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -130,7 +129,10 @@
       <workItem from="1604307916102" duration="7839000" />
       <workItem from="1604396865588" duration="1516000" />
       <workItem from="1604408516014" duration="700000" />
-      <workItem from="1604409349142" duration="4518000" />
+      <workItem from="1604409349142" duration="5139000" />
+      <workItem from="1604433980556" duration="776000" />
+      <workItem from="1604570131414" duration="2389000" />
+      <workItem from="1604574249443" duration="309000" />
     </task>
     <task id="LOCAL-00001" summary="Change Heading">
       <created>1603364782765</created>
@@ -230,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604413095119</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Updated README.md">
+      <created>1604413917852</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1604413917852</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +305,8 @@
     <MESSAGE value="Footer" />
     <MESSAGE value="Attempting to put Back to Top, currently not working &#10;&#10;Tutorial used - https://www.youtube.com/watch?v=SJVCvnKM_lI" />
     <MESSAGE value="Placeholder Home Menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Placeholder Home Menu" />
+    <MESSAGE value="Updated README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="715" y="344" key="#Notifications" timestamp="1603358640084">
@@ -307,10 +317,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="732" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603357934999" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1603358795714">
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1604574352384">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603358795714" />
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604574352384" />
     <state x="1210" y="307" key="Github.ShareDialog" timestamp="1603359886780">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -319,48 +330,48 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="894" y="270" key="Github.UntrackedFilesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603359697866" />
-    <state width="949" height="282" key="GridCell.Tab.0.bottom" timestamp="1604410508769">
+    <state width="949" height="282" key="GridCell.Tab.0.bottom" timestamp="1604414648942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604410508769" />
-    <state width="949" height="282" key="GridCell.Tab.0.center" timestamp="1604410508768">
+    <state width="949" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604414648942" />
+    <state width="949" height="282" key="GridCell.Tab.0.center" timestamp="1604414648942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604410508768" />
-    <state width="949" height="282" key="GridCell.Tab.0.left" timestamp="1604410508768">
+    <state width="949" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604414648942" />
+    <state width="949" height="282" key="GridCell.Tab.0.left" timestamp="1604414648942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604410508768" />
-    <state width="949" height="282" key="GridCell.Tab.0.right" timestamp="1604410508769">
+    <state width="949" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604414648942" />
+    <state width="949" height="282" key="GridCell.Tab.0.right" timestamp="1604414648942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604410508769" />
-    <state width="949" height="282" key="GridCell.Tab.1.bottom" timestamp="1604410508769">
+    <state width="949" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604414648942" />
+    <state width="949" height="282" key="GridCell.Tab.1.bottom" timestamp="1604414648942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604410508769" />
-    <state width="949" height="282" key="GridCell.Tab.1.center" timestamp="1604410508769">
+    <state width="949" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604414648942" />
+    <state width="949" height="282" key="GridCell.Tab.1.center" timestamp="1604414648942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604410508769" />
-    <state width="949" height="282" key="GridCell.Tab.1.left" timestamp="1604410508769">
+    <state width="949" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604414648942" />
+    <state width="949" height="282" key="GridCell.Tab.1.left" timestamp="1604414648942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604410508769" />
-    <state width="949" height="282" key="GridCell.Tab.1.right" timestamp="1604410508769">
+    <state width="949" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604414648942" />
+    <state width="949" height="282" key="GridCell.Tab.1.right" timestamp="1604414648942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604410508769" />
-    <state x="588" y="91" key="SettingsEditor" timestamp="1604316359809">
+    <state width="949" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604414648942" />
+    <state x="588" y="91" key="SettingsEditor" timestamp="1604574357947">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="588" y="91" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603363784731" />
-    <state x="588" y="91" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604316359809" />
-    <state x="892" y="153" key="Vcs.Push.Dialog.v2" timestamp="1604413121477">
+    <state x="588" y="91" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604574357947" />
+    <state x="892" y="153" key="Vcs.Push.Dialog.v2" timestamp="1604434752706">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603365273153" />
-    <state x="892" y="153" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604413121477" />
+    <state x="892" y="153" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604434752706" />
     <state x="736" y="138" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1604316357770">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
