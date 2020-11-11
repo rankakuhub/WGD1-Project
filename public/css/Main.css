@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
-@font-face { font-family: Digital; src: url('../content/fonts/DS-DIGII.TTF'); }
+
+@font-face {
+    font-family: Digital;
+    src: url('../content/fonts/DS-DIGII.TTF');
+}
+
 :root {
     --background: rgba(255, 30, 170, .85);
 }
@@ -10,7 +15,7 @@
 
 body {
     margin: 0;
-    color : #ffffff;
+    color: #ffffff;
     background: #333;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
@@ -26,15 +31,34 @@ body {
     display: grid;
     place-items: center;
 }
+
+#page-container {
+    position: relative;
+    min-height: 65vh;
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem; /* Footer height */
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; /* Footer height */
+}
+
 #summaryContent {
     width: 40%;
     margin-right: 300px;
     margin-left: 1000px;
 }
-#summaryTitle{
+
+#summaryTitle {
     margin-right: 300px;
-    margin-left: 1280px;
+    margin-left: 1150px;
 }
+
 #placeholder {
     position: absolute;
     width: 25%;
@@ -62,7 +86,7 @@ header {
 }
 
 .nav-toggle:focus ~ .nav-toggle-label {
-    outline: 3px solid rgba(55,55,55,55);
+    outline: 3px solid rgba(55, 55, 55, 55);
 }
 
 .nav-toggle-label {
@@ -137,7 +161,7 @@ nav a:hover {
 }
 
 .nav-toggle:checked ~ nav {
-    transform: scale(1,1);
+    transform: scale(1, 1);
 }
 
 .nav-toggle:checked ~ nav a {
@@ -163,13 +187,13 @@ nav a:hover {
     }
 
     nav {
-    // all: unset; /* this causes issues with Edge, since it's unsupported */
+    / / all: unset; /* this causes issues with Edge, since it's unsupported */
 
         /* the following lines are not from my video, but add Edge support */
         position: relative;
         text-align: left;
         transition: none;
-        transform: scale(1,1);
+        transform: scale(1, 1);
         background: none;
         top: initial;
         left: initial;
@@ -209,6 +233,6 @@ nav a:hover {
     }
 
     nav a:hover::before {
-        transform: scale(1,1);
+        transform: scale(1, 1);
     }
 }
