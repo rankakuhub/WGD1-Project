@@ -27,12 +27,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba2a7e0-83ea-4803-84c9-a18dcaab3616" name="Default Changelist" comment="Phaser.min.js added">
-      <change beforePath="$PROJECT_DIR$/.idea/Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/Main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/html/Development.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/html/Development.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/html/Game.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/html/Game.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/html/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/html/Main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/Game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/phaser.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/libs/phaser.min.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +91,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="org.plantuml.idea.lang.settings.PlantUmlSettingsPage" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -137,7 +137,10 @@
       <workItem from="1604409349142" duration="5139000" />
       <workItem from="1604433980556" duration="776000" />
       <workItem from="1604570131414" duration="2389000" />
-      <workItem from="1604574249443" duration="4474000" />
+      <workItem from="1604574249443" duration="7164000" />
+      <workItem from="1604959152484" duration="515000" />
+      <workItem from="1605104598541" duration="2480000" />
+      <workItem from="1605120139360" duration="2008000" />
     </task>
     <task id="LOCAL-00001" summary="Change Heading">
       <created>1603364782765</created>
@@ -258,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604574642692</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Phaser.min.js added">
+      <created>1604578777862</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1604578777862</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,10 +343,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="715" y="344" key="#Notifications/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603358640084" />
-    <state x="732" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603357934999">
+    <state x="732" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605120702178">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="732" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603357934999" />
+    <state x="732" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605120702178" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605120754486">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605120754486" />
     <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1604574352384">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -382,25 +397,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="949" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604414648942" />
-    <state x="588" y="91" key="SettingsEditor" timestamp="1604574357947">
+    <state x="588" y="91" key="SettingsEditor" timestamp="1604959443733">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="588" y="91" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603363784731" />
-    <state x="588" y="91" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604574357947" />
-    <state x="892" y="153" key="Vcs.Push.Dialog.v2" timestamp="1604574623706">
+    <state x="588" y="91" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604959443733" />
+    <state x="892" y="153" key="Vcs.Push.Dialog.v2" timestamp="1604959659787">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603365273153" />
-    <state x="892" y="153" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604574623706" />
+    <state x="892" y="153" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604959659787" />
     <state x="736" y="138" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1604316357770">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="736" y="138" key="com.intellij.javaee.MapExternalResourceDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604316357770" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604322386521">
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605105130239">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603364720213" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604322386521" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605105130239" />
     <state x="728" y="233" key="git4idea.branch.GitSmartOperationDialog" timestamp="1604576730080">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

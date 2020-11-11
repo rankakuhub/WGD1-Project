@@ -22,9 +22,11 @@ function preload(){
     this.load.image('sky', 'assets/skies/space3.png');
     this.load.image('logo', 'assets/sprites/phaser3-logo.png');
     this.load.image('red', 'assets/particles/red.png');
+    this.game.scale.pageAlignHorizontally = true;this.game.scale.pageAlignVertically = true;this.game.scale.refresh();
 }
 
 function create(){
+
     this.add.image(400,300, 'sky');
 
     var particles = this.add.particles('red');

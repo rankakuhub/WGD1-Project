@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
-
+@font-face { font-family: Digital; src: url('../content/fonts/DS-DIGII.TTF'); }
 :root {
     --background: rgba(255, 30, 170, .85);
 }
@@ -157,6 +157,9 @@ nav a:hover {
 
     .logo {
         grid-column: 2 / 3;
+        font-family: 'Digital', sans-serif;
+        font-weight: 900;
+        font-size: 35px;
     }
 
     nav {
