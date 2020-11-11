@@ -6,25 +6,65 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/Testing" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ba2a7e0-83ea-4803-84c9-a18dcaab3616" name="Default Changelist" comment="Del Java Folder" />
+    <list default="true" id="6ba2a7e0-83ea-4803-84c9-a18dcaab3616" name="Default Changelist" comment="Tab Titles for each Page has been Implemented">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="Testing" />
+  </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/Testing" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jE6iFYihzdhsxuQ3gZIDUrY0nl" />
@@ -46,17 +86,31 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\WGD1-Project\public\js\libs" />
+      <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\WGD1-Project\public\js" />
       <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\WGD1-Project\public" />
       <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\WGD1-Project\public\content\images" />
       <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\WGD1-Project\public\content\fonts" />
-      <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\Project\public" />
-      <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\Project\src\java" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\WGD1-Project\public\css" />
+      <recent name="D:\Uni\Term 1 (2020)\Web Games Development 1\StudentExample1\StudentExample1\src\css" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WGD1-Project/public/html/Main.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.Main.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -69,7 +123,19 @@
       <workItem from="1603357029270" duration="1179000" />
       <workItem from="1603358274138" duration="1902000" />
       <workItem from="1603360244101" duration="4661000" />
-      <workItem from="1603965588503" duration="5525000" />
+      <workItem from="1603965588503" duration="11808000" />
+      <workItem from="1604237281585" duration="65000" />
+      <workItem from="1604237503496" duration="458000" />
+      <workItem from="1604307916102" duration="7839000" />
+      <workItem from="1604396865588" duration="1516000" />
+      <workItem from="1604408516014" duration="700000" />
+      <workItem from="1604409349142" duration="5139000" />
+      <workItem from="1604433980556" duration="776000" />
+      <workItem from="1604570131414" duration="2389000" />
+      <workItem from="1604574249443" duration="7164000" />
+      <workItem from="1604959152484" duration="515000" />
+      <workItem from="1605104598541" duration="2480000" />
+      <workItem from="1605120139360" duration="8482000" />
     </task>
     <task id="LOCAL-00001" summary="Change Heading">
       <created>1603364782765</created>
@@ -127,7 +193,91 @@
       <option name="project" value="LOCAL" />
       <updated>1603970978245</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="New">
+      <created>1603971239272</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603971239272</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Game">
+      <created>1603971342900</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603971342900</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Footer">
+      <created>1604312950570</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1604312950570</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Attempting to put Back to Top, currently not working &#10;&#10;Tutorial used - https://www.youtube.com/watch?v=SJVCvnKM_lI">
+      <created>1604324610275</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1604324610275</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Placeholder Home Menu">
+      <created>1604413071817</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1604413071817</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Placeholder Home Menu">
+      <created>1604413095119</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1604413095119</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Updated README.md">
+      <created>1604413917852</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1604413917852</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Phaser.min.js added">
+      <created>1604574576758</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1604574576758</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Phaser.min.js added">
+      <created>1604574642692</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1604574642692</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Phaser.min.js added">
+      <created>1604578777862</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1604578777862</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Font for Logo has been Implemented with Digital">
+      <created>1605122197543</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1605122197543</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Tab Titles for each Page has been Implemented">
+      <created>1605122276846</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1605122276846</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +288,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/Testing-2" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -148,6 +310,11 @@
         <entry key="Branch">
           <value>
             <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/Testing" />
+                </option>
+              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="master" />
@@ -170,21 +337,37 @@
     <MESSAGE value="Added Development" />
     <MESSAGE value="Files 1" />
     <MESSAGE value="Del Java Folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Del Java Folder" />
+    <MESSAGE value="New" />
+    <MESSAGE value="Game" />
+    <MESSAGE value="Able to Get Css on Main" />
+    <MESSAGE value="Footer" />
+    <MESSAGE value="Attempting to put Back to Top, currently not working &#10;&#10;Tutorial used - https://www.youtube.com/watch?v=SJVCvnKM_lI" />
+    <MESSAGE value="Placeholder Home Menu" />
+    <MESSAGE value="Updated README.md" />
+    <MESSAGE value="Phaser.min.js added" />
+    <MESSAGE value="Font for Logo has been Implemented with Digital" />
+    <MESSAGE value="Tab Titles for each Page has been Implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tab Titles for each Page has been Implemented" />
   </component>
   <component name="WindowStateProjectService">
     <state x="715" y="344" key="#Notifications" timestamp="1603358640084">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="715" y="344" key="#Notifications/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603358640084" />
-    <state x="732" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603357934999">
+    <state x="732" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605120702178">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="732" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603357934999" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1603358795714">
+    <state x="732" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605120702178" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605120754486">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605120754486" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1604574352384">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603358795714" />
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604574352384" />
     <state x="1210" y="307" key="Github.ShareDialog" timestamp="1603359886780">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -193,19 +376,64 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="894" y="270" key="Github.UntrackedFilesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603359697866" />
-    <state x="588" y="91" key="SettingsEditor" timestamp="1603363784731">
+    <state width="949" height="282" key="GridCell.Tab.0.bottom" timestamp="1604414648942">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604414648942" />
+    <state width="949" height="282" key="GridCell.Tab.0.center" timestamp="1604414648942">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604414648942" />
+    <state width="949" height="282" key="GridCell.Tab.0.left" timestamp="1604414648942">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604414648942" />
+    <state width="949" height="282" key="GridCell.Tab.0.right" timestamp="1604414648942">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604414648942" />
+    <state width="949" height="282" key="GridCell.Tab.1.bottom" timestamp="1604414648942">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604414648942" />
+    <state width="949" height="282" key="GridCell.Tab.1.center" timestamp="1604414648942">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604414648942" />
+    <state width="949" height="282" key="GridCell.Tab.1.left" timestamp="1604414648942">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604414648942" />
+    <state width="949" height="282" key="GridCell.Tab.1.right" timestamp="1604414648942">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="949" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604414648942" />
+    <state x="588" y="91" key="SettingsEditor" timestamp="1604959443733">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="588" y="91" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603363784731" />
-    <state x="892" y="153" key="Vcs.Push.Dialog.v2" timestamp="1603970980605">
+    <state x="588" y="91" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604959443733" />
+    <state x="892" y="153" key="Vcs.Push.Dialog.v2" timestamp="1605122409378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603365273153" />
-    <state x="892" y="153" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603970980605" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603968753306">
+    <state x="892" y="153" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605122409378" />
+    <state x="736" y="138" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1604316357770">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="736" y="138" key="com.intellij.javaee.MapExternalResourceDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604316357770" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605130847302">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603364720213" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603968753306" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605130847302" />
+    <state x="728" y="233" key="git4idea.branch.GitSmartOperationDialog" timestamp="1604576730080">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="728" y="233" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604576730080" />
+    <state x="919" y="219" width="672" height="678" key="search.everywhere.popup" timestamp="1604313344390">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="919" y="219" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604313344390" />
   </component>
 </project>
