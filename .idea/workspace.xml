@@ -27,12 +27,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba2a7e0-83ea-4803-84c9-a18dcaab3616" name="Default Changelist" comment="Tab Titles for each Page has been Implemented">
-      <change beforePath="$PROJECT_DIR$/.idea/Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/Main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/html/Development.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/html/Development.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/html/Game.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/html/Game.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/html/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/html/Main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/Game.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,6 +138,7 @@
       <workItem from="1604959152484" duration="515000" />
       <workItem from="1605104598541" duration="2480000" />
       <workItem from="1605120139360" duration="8482000" />
+      <workItem from="1605129848916" duration="627000" />
     </task>
     <task id="LOCAL-00001" summary="Change Heading">
       <created>1603364782765</created>
