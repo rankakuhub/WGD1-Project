@@ -31,6 +31,9 @@ body {
     display: grid;
     place-items: center;
 }
+.button{
+    color: deeppink;
+}
 
 #page-container {
     position: relative;

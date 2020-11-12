@@ -26,7 +26,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ba2a7e0-83ea-4803-84c9-a18dcaab3616" name="Default Changelist" comment="Merged Changes from Testing 2" />
+    <list default="true" id="6ba2a7e0-83ea-4803-84c9-a18dcaab3616" name="Default Changelist" comment="Merged Changes from Testing 2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/Game.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/Game.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/Main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/html/Game.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/html/Game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/html/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/html/Main.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,6 +140,7 @@
       <workItem from="1604959152484" duration="515000" />
       <workItem from="1605104598541" duration="2480000" />
       <workItem from="1605120139360" duration="8482000" />
+      <workItem from="1605175287120" duration="5293000" />
     </task>
     <task id="LOCAL-00001" summary="Change Heading">
       <created>1603364782765</created>
