@@ -35,6 +35,10 @@ body {
     color: deeppink;
 }
 
+.button {
+    color: deeppink;
+}
+
 #page-container {
     position: relative;
     min-height: 65vh;
