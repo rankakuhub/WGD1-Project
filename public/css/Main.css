@@ -32,12 +32,19 @@ body {
     place-items: center;
 }
 .button{
-    color: deeppink;
+
+    background-color: deeppink;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
-.button {
-    color: deeppink;
-}
 
 #page-container {
     position: relative;
@@ -72,8 +79,18 @@ body {
     top: 20%;
     right: 65%;
 }
+#devPlaceholder {
+    position: center;
+    width: 35%;
+    height: auto;
 
+}
+#devPlaceholder2 {
+    position: center;
+    width: 35%;
+    height: auto;
 
+}
 /* navigation styles start here */
 
 header {

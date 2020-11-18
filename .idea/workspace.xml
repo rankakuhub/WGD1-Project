@@ -26,10 +26,18 @@
     </select>
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="6ba2a7e0-83ea-4803-84c9-a18dcaab3616" name="Default Changelist" comment="Merged Changes from Testing 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/Game.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/Game.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/Main.css" afterDir="false" />
+=======
+    <list default="true" id="6ba2a7e0-83ea-4803-84c9-a18dcaab3616" name="Default Changelist" comment="Merged Changes to Master">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/Game.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/Game.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/Main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/html/Development.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/html/Development.html" afterDir="false" />
+>>>>>>> c8235a493c3a953b14b07bcae2b5afe6b2de5921
       <change beforePath="$PROJECT_DIR$/public/html/Game.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/html/Game.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/html/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/html/Main.html" afterDir="false" />
     </list>
@@ -140,7 +148,12 @@
       <workItem from="1604959152484" duration="515000" />
       <workItem from="1605104598541" duration="2480000" />
       <workItem from="1605120139360" duration="8482000" />
+<<<<<<< HEAD
       <workItem from="1605175287120" duration="5293000" />
+=======
+      <workItem from="1605174211395" duration="5495000" />
+      <workItem from="1605626045677" duration="9000" />
+>>>>>>> c8235a493c3a953b14b07bcae2b5afe6b2de5921
     </task>
     <task id="LOCAL-00001" summary="Change Heading">
       <created>1603364782765</created>
@@ -289,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605130960766</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Merged Changes to Master">
+      <created>1605131331958</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1605131331958</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,7 +380,8 @@
     <MESSAGE value="Font for Logo has been Implemented with Digital" />
     <MESSAGE value="Tab Titles for each Page has been Implemented" />
     <MESSAGE value="Merged Changes from Testing 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merged Changes from Testing 2" />
+    <MESSAGE value="Merged Changes to Master" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merged Changes to Master" />
   </component>
   <component name="WindowStateProjectService">
     <state x="715" y="344" key="#Notifications" timestamp="1603358640084">
@@ -426,11 +447,11 @@
     </state>
     <state x="588" y="91" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603363784731" />
     <state x="588" y="91" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604959443733" />
-    <state x="849" y="182" key="Vcs.Push.Dialog.v2" timestamp="1605131247972">
+    <state x="849" y="182" key="Vcs.Push.Dialog.v2" timestamp="1605131349860">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603365273153" />
-    <state x="849" y="182" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605131247972" />
+    <state x="849" y="182" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605131349860" />
     <state x="736" y="138" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1604316357770">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
