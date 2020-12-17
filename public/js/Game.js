@@ -3,10 +3,11 @@ var config = {
     width: 800,
     height: 600,
     parent:'my game',
+
     physics: {
         default: 'arcade',
         arcade: {
-            gravity: {y: 200}
+            gravity: {y: 0}
         }
     },
     scene: {
@@ -18,31 +19,20 @@ var config = {
 var game = new Phaser.Game(config);
 
 function preload() {
-    this.load.setBaseURL('https://labs.phaser.io');
 
-    this.load.image('sky', 'assets/skies/space3.png');
-    this.load.image('logo', 'assets/sprites/phaser3-logo.png');
-    this.load.image('red', 'assets/particles/red.png');
+    this.load.image('tiles', '../assets/tilesets/level1__tilesheet.png');
+    this.load.image('ground', '../assets/images/Level1_Ground.png');
+    this.load.image('walls', '../assets/images/Level1_Walls.png');
+
+    this.load.json('map', '../assets/tilemaps/Level1.json');
 
 }
 
 function create() {
 
-    this.add.image(400, 300, 'sky');
+    const backgroundImage = this.add.image(0,0, 'ground').setOrigin(0,0);
+    const Image = this.add.image(0,0, 'walls').setOrigin(0,0);
 
-    var particles = this.add.particles('red');
 
-    var emitter = particles.createEmitter({
-        speed: 100,
-        scale: {start: 1, end: 0},
-        blendMode: 'ADD' //if not working, try NORMAL
-    });
 
-    var logo = this.physics.add.image(400, 100, 'logo');
-
-    logo.setVelocity(100, 200);
-    logo.setBounce(1, 1);
-    logo.setCollideWorldBounds(true);
-
-    emitter.startFollow(logo);
 }
