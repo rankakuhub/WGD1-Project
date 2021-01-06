@@ -31,11 +31,13 @@ function preload() {
 }
 
 var inputCursor;
+var wallsCollider
 let playerSprite
+
 function create() {
 
     this.add.image(0,0, 'ground').setOrigin(0,0);
-    this.add.image(0,0, 'walls').setOrigin(0,0);
+    wallsCollider = this.add.sprite(0,0, 'walls').setOrigin(0,0);
     playerSprite = this.physics.add.sprite(130, 445, 'player');
     playerSprite.setScale(0.15);
 
@@ -43,12 +45,15 @@ function create() {
     this.cameras.main.startFollow(playerSprite);
     this.cameras.main.zoom = 3;
     inputCursor = this.input;
+    playerSprite.setCollideWorldBounds(true);
 
 }
 
 function update(){
-    let angle=Phaser.Math.Angle.Between(playerSprite.x,playerSprite.y,inputCursor.x,inputCursor.y);
+
+    let angle = Phaser.Math.Angle.Between(playerSprite.x,playerSprite.y,inputCursor.x,inputCursor.y);
     playerSprite.setRotation(angle);playerSprite.setRotation(angle);
+    playerSprite.setRotation(angle+Math.PI/2);
 
     this.keys = this.input.keyboard.addKeys(
         {up:Phaser.Input.Keyboard.KeyCodes.W,
