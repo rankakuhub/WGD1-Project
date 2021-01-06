@@ -25,6 +25,7 @@ function preload() {
     this.load.image('ground', '../assets/images/Level1_Ground.png');
     this.load.image('walls', '../assets/images/Level1_Walls.png');
     this.load.image('player', '../assets/images/MainCharacterAim.png');
+    this.load.image('enemy', '../assets/images/EnemyAim.png');
 
     this.load.json('map', '../assets/tilemaps/Level1.json');
 
@@ -33,13 +34,28 @@ function preload() {
 var inputCursor;
 var wallsCollider
 let playerSprite
+let enemySprite
 
 function create() {
 
     this.add.image(0,0, 'ground').setOrigin(0,0);
     wallsCollider = this.add.sprite(0,0, 'walls').setOrigin(0,0);
+
+    //main player
     playerSprite = this.physics.add.sprite(130, 445, 'player');
     playerSprite.setScale(0.15);
+
+    //enemy spam...
+    enemySprite = this.physics.add.sprite(130, 350, 'enemy');
+    enemySprite.setScale(0.15);
+    enemySprite = this.physics.add.sprite(290, 280, 'enemy');
+    enemySprite.setScale(0.15);
+    enemySprite = this.physics.add.sprite(310, 190, 'enemy');
+    enemySprite.setScale(0.15);
+    enemySprite = this.physics.add.sprite(130, 230, 'enemy');
+    enemySprite.setScale(0.15);
+    enemySprite = this.physics.add.sprite(50, 90, 'enemy');
+    enemySprite.setScale(0.15);
 
     this.keys = this.input.keyboard.createCursorKeys();
     this.cameras.main.startFollow(playerSprite);
