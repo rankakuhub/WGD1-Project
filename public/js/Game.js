@@ -24,30 +24,31 @@ function preload() {
     this.load.image('tiles', '../assets/tilesets/level1__tilesheet.png');
     this.load.image('ground', '../assets/images/Level1_Ground.png');
     this.load.image('walls', '../assets/images/Level1_Walls.png');
-    this.load.image('player', '../assets/images/PlayerCharacter.png');
+    this.load.image('player', '../assets/images/MainCharacterAim.png');
 
     this.load.json('map', '../assets/tilemaps/Level1.json');
 
 }
 
-//var inputCursor;
+var inputCursor;
 let playerSprite
 function create() {
 
     this.add.image(0,0, 'ground').setOrigin(0,0);
     this.add.image(0,0, 'walls').setOrigin(0,0);
     playerSprite = this.physics.add.sprite(130, 445, 'player');
-    playerSprite.setScale(0.3);
+    playerSprite.setScale(0.15);
 
     this.keys = this.input.keyboard.createCursorKeys();
     this.cameras.main.startFollow(playerSprite);
     this.cameras.main.zoom = 3;
-   // this.input = inputCursor;
+    inputCursor = this.input;
 
 }
 
 function update(){
-   // let angle=Phaser.Math.Angle.Between(playerSprite.x,playerSprite.y,inputCursor.x,inputCursor.y);
+    let angle=Phaser.Math.Angle.Between(playerSprite.x,playerSprite.y,inputCursor.x,inputCursor.y);
+    playerSprite.setRotation(angle);playerSprite.setRotation(angle);
 
     this.keys = this.input.keyboard.addKeys(
         {up:Phaser.Input.Keyboard.KeyCodes.W,
