@@ -57,6 +57,20 @@ function create() {
     enemySprite = this.physics.add.sprite(50, 90, 'enemy');
     enemySprite.setScale(0.15);
 
+    enemySprite = this.physics.add.sprite(375, 250, 'enemy');
+    enemySprite.setScale(0.15);
+    enemySprite = this.physics.add.sprite(460, 100, 'enemy');
+    enemySprite.setScale(0.15);
+    enemySprite = this.physics.add.sprite(520, 110, 'enemy');
+    enemySprite.setScale(0.15);
+    enemySprite = this.physics.add.sprite(740, 40, 'enemy');
+    enemySprite.setScale(0.15);
+    enemySprite = this.physics.add.sprite(650, 375, 'enemy');
+    enemySprite.setScale(0.15);
+    enemySprite = this.physics.add.sprite(450, 500, 'enemy');
+    enemySprite.setScale(0.15);
+
+
     this.keys = this.input.keyboard.createCursorKeys();
     this.cameras.main.startFollow(playerSprite);
     this.cameras.main.zoom = 3;
