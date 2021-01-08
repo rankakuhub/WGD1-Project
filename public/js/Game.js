@@ -46,6 +46,7 @@ function create() {
     playerSprite.setScale(0.15);
 
     //enemy spam...
+
     enemySprite = this.physics.add.sprite(130, 350, 'enemy');
     enemySprite.setScale(0.15);
     enemySprite = this.physics.add.sprite(290, 280, 'enemy');
@@ -76,6 +77,7 @@ function create() {
     this.cameras.main.zoom = 3;
     inputCursor = this.input;
     playerSprite.setCollideWorldBounds(true);
+    
 
 }
 
@@ -84,6 +86,10 @@ function update(){
     let angle = Phaser.Math.Angle.Between(playerSprite.x,playerSprite.y,inputCursor.x,inputCursor.y);
     playerSprite.setRotation(angle);playerSprite.setRotation(angle);
     playerSprite.setRotation(angle+Math.PI/2);
+
+    let angle2 = Phaser.Math.Angle.Between(enemySprite.x,enemySprite.y,playerSprite.x,playerSprite.y);
+    enemySprite.setRotation(angle2);enemySprite.setRotation(angle2);
+    enemySprite.setRotation(angle2+Math.PI/2);
 
     this.keys = this.input.keyboard.addKeys(
         {up:Phaser.Input.Keyboard.KeyCodes.W,
