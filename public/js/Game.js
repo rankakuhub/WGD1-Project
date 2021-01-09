@@ -27,6 +27,15 @@ function preload() {
     this.load.image('player', '../assets/images/MainCharacterAim.png');
     this.load.image('enemy', '../assets/images/EnemyAim.png');
 
+    //objects load
+    this.load.image('arcade1', '../assets/images/Arcade1.png');
+    this.load.image('arcade2', '../assets/images/Arcade2.png');
+    this.load.image('arcade3', '../assets/images/Arcade3.png');
+    this.load.image('arcade4', '../assets/images/Arcade4.png');
+    this.load.image('arcade5', '../assets/images/Arcade5.png');
+    this.load.image('freezer', '../assets/images/Freezer.png');
+    this.load.image('toilet', '../assets/images/Pooper.png');
+
     this.load.json('map', '../assets/tilemaps/Level1.json');
 
 }
@@ -35,6 +44,9 @@ var inputCursor;
 var wallsCollider
 let playerSprite
 let enemySprite
+let arcadeSprite
+let bathroomSprite
+let kitchenSprite
 
 function create() {
 
@@ -58,9 +70,9 @@ function create() {
     enemySprite = this.physics.add.sprite(50, 90, 'enemy');
     enemySprite.setScale(0.15);
 
-    enemySprite = this.physics.add.sprite(375, 250, 'enemy');
+    enemySprite = this.physics.add.sprite(400, 235, 'enemy');
     enemySprite.setScale(0.15);
-    enemySprite = this.physics.add.sprite(460, 100, 'enemy');
+    enemySprite = this.physics.add.sprite(460, 120, 'enemy');
     enemySprite.setScale(0.15);
     enemySprite = this.physics.add.sprite(520, 110, 'enemy');
     enemySprite.setScale(0.15);
@@ -71,6 +83,24 @@ function create() {
     enemySprite = this.physics.add.sprite(450, 500, 'enemy');
     enemySprite.setScale(0.15);
 
+    //objects
+
+    arcadeSprite = this.physics.add.sprite(390, 105, 'arcade1');
+    arcadeSprite.setScale(0.5);
+    arcadeSprite = this.physics.add.sprite(460, 105, 'arcade2');
+    arcadeSprite.setScale(0.5);
+    arcadeSprite = this.physics.add.sprite(370, 175, 'arcade3');
+    arcadeSprite.setScale(0.5);
+    arcadeSprite = this.physics.add.sprite(370, 240, 'arcade4');
+    arcadeSprite.setScale(0.5);
+    arcadeSprite = this.physics.add.sprite(460, 260, 'arcade5');
+    arcadeSprite.setScale(0.5);
+
+    bathroomSprite = this.physics.add.sprite(580, 33, 'toilet');
+    bathroomSprite.setScale(0.35);
+
+    bathroomSprite = this.physics.add.sprite(205, 95, 'freezer');
+    bathroomSprite.setScale(0.5);
 
     this.keys = this.input.keyboard.createCursorKeys();
     this.cameras.main.startFollow(playerSprite);
