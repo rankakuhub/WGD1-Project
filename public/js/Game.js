@@ -35,12 +35,12 @@ function preload() {
     this.load.image('arcade5', '../assets/images/Arcade5.png');
     this.load.image('freezer', '../assets/images/Freezer.png');
     this.load.image('toilet', '../assets/images/Pooper.png');
-<<<<<<< Updated upstream
+
     this.load.image('sink', '../assets/images/Sink.png');
     this.load.image('table', '../assets/images/Table.png');
-=======
+
     this.load.image('bullet', '../assets/images/Bullet1.png');
->>>>>>> Stashed changes
+
 
     this.load.json('map', '../assets/tilemaps/Level1.json');
 
@@ -53,13 +53,12 @@ let enemySprite
 let arcadeSprite
 let bathroomSprite
 let kitchenSprite
-<<<<<<< Updated upstream
+
 let dinningSprite
-=======
+
 let playerBullet;
 let mouse;
 let control;
->>>>>>> Stashed changes
 
 function create() {
 
