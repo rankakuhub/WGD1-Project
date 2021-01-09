@@ -35,21 +35,31 @@ function preload() {
     this.load.image('arcade5', '../assets/images/Arcade5.png');
     this.load.image('freezer', '../assets/images/Freezer.png');
     this.load.image('toilet', '../assets/images/Pooper.png');
+<<<<<<< Updated upstream
     this.load.image('sink', '../assets/images/Sink.png');
     this.load.image('table', '../assets/images/Table.png');
+=======
+    this.load.image('bullet', '../assets/images/Bullet1.png');
+>>>>>>> Stashed changes
 
     this.load.json('map', '../assets/tilemaps/Level1.json');
 
 }
 
-var inputCursor;
-var wallsCollider
+let inputCursor;
+let wallsCollider
 let playerSprite
 let enemySprite
 let arcadeSprite
 let bathroomSprite
 let kitchenSprite
+<<<<<<< Updated upstream
 let dinningSprite
+=======
+let playerBullet;
+let mouse;
+let control;
+>>>>>>> Stashed changes
 
 function create() {
 
@@ -60,8 +70,12 @@ function create() {
     playerSprite = this.physics.add.sprite(130, 445, 'player');
     playerSprite.setScale(0.15);
 
-    //enemy spam...
+    playerBullet = this.physics.add.sprite(130,445,'bullet');
+    playerBullet.setScale(0.3)
+    mouse = this.input.mousePointer;
 
+    //enemy spam...
+    enemySprite = this.physics.add.group();
     enemySprite = this.physics.add.sprite(130, 350, 'enemy');
     enemySprite.setScale(0.15);
     enemySprite = this.physics.add.sprite(290, 280, 'enemy');
@@ -114,9 +128,12 @@ function create() {
     this.cameras.main.startFollow(playerSprite);
     this.cameras.main.zoom = 3;
     inputCursor = this.input;
+    playerSprite.setImmovable();
     playerSprite.setCollideWorldBounds(true);
-    
 
+    wallsCollider = this.physics.add.staticGroup();
+    wallsCollider.create(0, 0, 'walls').setScale(2).refreshBody();
+    this.physics.add.collider(playerSprite, wallsCollider);
 }
 
 function update(){
@@ -124,6 +141,23 @@ function update(){
     let angle = Phaser.Math.Angle.Between(playerSprite.x,playerSprite.y,inputCursor.x,inputCursor.y);
     playerSprite.setRotation(angle);playerSprite.setRotation(angle);
     playerSprite.setRotation(angle+Math.PI/2);
+
+    if(mouse.isDown){
+        //for fire again
+        playerBullet = this.physics.add.sprite(130,445,'bullet');
+        //move to mouse position
+        this.physics.moveTo(playerBullet,inputCursor.x,inputCursor.y,500);
+    }
+
+    if(mouse.isDown&& control === false){
+        //for fire again
+        playerBullet = this.physics.add.sprite(130,445,'bullet');
+        //move to mouse position
+        this.physics.moveTo(playerBullet,inputCursor.x,inputCursor.y,500);
+        control = true;
+    }
+
+    this.physics.add.overlap(playerBullet,enemySprite,destroy,null,this);
 
     let angle2 = Phaser.Math.Angle.Between(enemySprite.x,enemySprite.y,playerSprite.x,playerSprite.y);
     enemySprite.setRotation(angle2);enemySprite.setRotation(angle2);
@@ -147,6 +181,10 @@ function update(){
     if (this.keys.down.isDown) {
         playerSprite.y += 1.5;
     }
+}
 
-
+function destroy(playerBullet,enemySprite) {
+    enemySprite.disableBody(true,true);
+    playerBullet.disableBody(true,true);
+    control=false;
 }
