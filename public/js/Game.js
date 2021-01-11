@@ -53,12 +53,12 @@ let enemySprite
 let arcadeSprite
 let bathroomSprite
 let kitchenSprite
-
 let dinningSprite
 
 let playerBullet;
 let mouse;
-let control;
+let control = false;
+let worldBounds
 
 function create() {
 
@@ -69,12 +69,11 @@ function create() {
     playerSprite = this.physics.add.sprite(130, 445, 'player');
     playerSprite.setScale(0.15);
 
-    playerBullet = this.physics.add.sprite(130,445,'bullet');
-    playerBullet.setScale(0.3)
+    playerBullet = this.physics.add.sprite(playerSprite.x,playerSprite.y,'bullet');
+    playerBullet.setScale(0)
     mouse = this.input.mousePointer;
 
     //enemy spam...
-    enemySprite = this.physics.add.group();
     enemySprite = this.physics.add.sprite(130, 350, 'enemy');
     enemySprite.setScale(0.15);
     enemySprite = this.physics.add.sprite(290, 280, 'enemy');
@@ -127,13 +126,14 @@ function create() {
     this.cameras.main.startFollow(playerSprite);
     this.cameras.main.zoom = 3;
     inputCursor = this.input;
-    playerSprite.setImmovable();
+   // wallsCollider.setImmovable(true);
     playerSprite.setCollideWorldBounds(true);
 
-    wallsCollider = this.physics.add.staticGroup();
-    wallsCollider.create(0, 0, 'walls').setScale(2).refreshBody();
-    this.physics.add.collider(playerSprite, wallsCollider);
+   // this.physics.add.collider(playerSprite, wallsCollider);
+
+    worldBounds = this.physics.world.bounds;
 }
+
 
 function update(){
 
@@ -141,19 +141,18 @@ function update(){
     playerSprite.setRotation(angle);playerSprite.setRotation(angle);
     playerSprite.setRotation(angle+Math.PI/2);
 
-    if(mouse.isDown){
+    if(mouse.isDown && control === false){
         //for fire again
-        playerBullet = this.physics.add.sprite(130,445,'bullet');
+        playerBullet = this.physics.add.sprite(playerSprite.x,playerSprite.y,'bullet');
         //move to mouse position
-        this.physics.moveTo(playerBullet,inputCursor.x,inputCursor.y,500);
+        this.physics.moveTo(playerBullet,inputCursor.x,inputCursor.y, 250);
+        playerBullet.setScale(0.2);
+        control = true;
     }
 
-    if(mouse.isDown&& control === false){
-        //for fire again
-        playerBullet = this.physics.add.sprite(130,445,'bullet');
-        //move to mouse position
-        this.physics.moveTo(playerBullet,inputCursor.x,inputCursor.y,500);
-        control = true;
+    if(playerBullet.x > worldBounds.width || playerBullet.y > worldBounds.height ||playerBullet.x < 0 || playerBullet.y < 0)
+    {
+        control = false;
     }
 
     this.physics.add.overlap(playerBullet,enemySprite,destroy,null,this);
