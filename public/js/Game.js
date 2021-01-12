@@ -66,20 +66,24 @@ let enemySprite8
 let enemySprite9
 let enemySprite10
 
-
+let score = 0;
+let scoreText;
 let playerBullet;
 let mouse;
 let control = false;
 let worldBounds
 
 function create() {
-
     this.add.image(0,0, 'ground').setOrigin(0,0);
-    wallsCollider = this.add.sprite(0,0, 'walls').setOrigin(0,0);
-
-    //main player
     playerSprite = this.physics.add.sprite(130, 445, 'player');
     playerSprite.setScale(0.15);
+
+    wallsCollider = this.physics.add.staticGroup();
+    wallsCollider.create(0, 0, 'walls');
+    wallsCollider = this.add.image(0,0, 'walls').setOrigin(0,0);
+    this.physics.add.collider(playerSprite, wallsCollider);
+
+    scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });
 
     playerBullet = this.physics.add.sprite(playerSprite.x,playerSprite.y,'bullet');
     playerBullet.setScale(0)
@@ -96,7 +100,6 @@ function create() {
     enemySprite3.setScale(0.15);
     enemySprite4 = this.physics.add.sprite(50, 90, 'enemy');
     enemySprite4.setScale(0.15);
-
     enemySprite5 = this.physics.add.sprite(400, 235, 'enemy');
     enemySprite5.setScale(0.15);
     enemySprite6 = this.physics.add.sprite(460, 120, 'enemy');
@@ -111,7 +114,6 @@ function create() {
     enemySprite10.setScale(0.15);
 
     //objects
-
     arcadeSprite = this.physics.add.sprite(390, 105, 'arcade1');
     arcadeSprite.setScale(0.5);
     arcadeSprite = this.physics.add.sprite(460, 105, 'arcade2');
@@ -249,6 +251,8 @@ function destroy(playerBullet,enemySprite,) {
     enemySprite.disableBody(true,true);
     playerBullet.disableBody(true,true);
     control=false;
+    score += 10;
+    scoreText.setText('Score: ' + score);
 }
 function destroy(playerBullet,enemySprite1,) {
 
