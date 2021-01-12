@@ -55,6 +55,18 @@ let bathroomSprite
 let kitchenSprite
 let dinningSprite
 
+let enemySprite1
+let enemySprite2
+let enemySprite3
+let enemySprite4
+let enemySprite5
+let enemySprite6
+let enemySprite7
+let enemySprite8
+let enemySprite9
+let enemySprite10
+
+
 let playerBullet;
 let mouse;
 let control = false;
@@ -76,27 +88,27 @@ function create() {
     //enemy spam...
     enemySprite = this.physics.add.sprite(130, 350, 'enemy');
     enemySprite.setScale(0.15);
-    enemySprite = this.physics.add.sprite(290, 280, 'enemy');
-    enemySprite.setScale(0.15);
-    enemySprite = this.physics.add.sprite(310, 190, 'enemy');
-    enemySprite.setScale(0.15);
-    enemySprite = this.physics.add.sprite(130, 230, 'enemy');
-    enemySprite.setScale(0.15);
-    enemySprite = this.physics.add.sprite(50, 90, 'enemy');
-    enemySprite.setScale(0.15);
+    enemySprite1 = this.physics.add.sprite(290, 280, 'enemy');
+    enemySprite1.setScale(0.15);
+    enemySprite2 = this.physics.add.sprite(310, 190, 'enemy');
+    enemySprite2.setScale(0.15);
+    enemySprite3 = this.physics.add.sprite(130, 230, 'enemy');
+    enemySprite3.setScale(0.15);
+    enemySprite4 = this.physics.add.sprite(50, 90, 'enemy');
+    enemySprite4.setScale(0.15);
 
-    enemySprite = this.physics.add.sprite(400, 235, 'enemy');
-    enemySprite.setScale(0.15);
-    enemySprite = this.physics.add.sprite(460, 120, 'enemy');
-    enemySprite.setScale(0.15);
-    enemySprite = this.physics.add.sprite(520, 110, 'enemy');
-    enemySprite.setScale(0.15);
-    enemySprite = this.physics.add.sprite(740, 40, 'enemy');
-    enemySprite.setScale(0.15);
-    enemySprite = this.physics.add.sprite(650, 375, 'enemy');
-    enemySprite.setScale(0.15);
-    enemySprite = this.physics.add.sprite(450, 500, 'enemy');
-    enemySprite.setScale(0.15);
+    enemySprite5 = this.physics.add.sprite(400, 235, 'enemy');
+    enemySprite5.setScale(0.15);
+    enemySprite6 = this.physics.add.sprite(460, 120, 'enemy');
+    enemySprite6.setScale(0.15);
+    enemySprite7 = this.physics.add.sprite(520, 110, 'enemy');
+    enemySprite7.setScale(0.15);
+    enemySprite8 = this.physics.add.sprite(740, 40, 'enemy');
+    enemySprite8.setScale(0.15);
+    enemySprite9 = this.physics.add.sprite(650, 375, 'enemy');
+    enemySprite9.setScale(0.15);
+    enemySprite10 = this.physics.add.sprite(450, 500, 'enemy');
+    enemySprite10.setScale(0.15);
 
     //objects
 
@@ -134,7 +146,6 @@ function create() {
     worldBounds = this.physics.world.bounds;
 }
 
-
 function update(){
 
     let angle = Phaser.Math.Angle.Between(playerSprite.x,playerSprite.y,inputCursor.x,inputCursor.y);
@@ -155,11 +166,63 @@ function update(){
         control = false;
     }
 
-    this.physics.add.overlap(playerBullet,enemySprite,destroy,null,this);
+    this.physics.add.overlap(playerBullet, enemySprite, destroy,null,this);
+    this.physics.add.overlap(playerBullet, enemySprite1, destroy,null,this);
+    this.physics.add.overlap(playerBullet, enemySprite2, destroy,null,this);
+    this.physics.add.overlap(playerBullet, enemySprite3, destroy,null,this);
+    this.physics.add.overlap(playerBullet, enemySprite4, destroy,null,this);
+    this.physics.add.overlap(playerBullet, enemySprite5, destroy,null,this);
+    this.physics.add.overlap(playerBullet, enemySprite6, destroy,null,this);
+    this.physics.add.overlap(playerBullet, enemySprite7, destroy,null,this);
+    this.physics.add.overlap(playerBullet, enemySprite8, destroy,null,this);
+    this.physics.add.overlap(playerBullet, enemySprite9, destroy,null,this);
+    this.physics.add.overlap(playerBullet, enemySprite10, destroy,null,this);
+
 
     let angle2 = Phaser.Math.Angle.Between(enemySprite.x,enemySprite.y,playerSprite.x,playerSprite.y);
     enemySprite.setRotation(angle2);enemySprite.setRotation(angle2);
     enemySprite.setRotation(angle2+Math.PI/2);
+
+    let angle3 = Phaser.Math.Angle.Between(enemySprite1.x,enemySprite1.y,playerSprite.x,playerSprite.y);
+    enemySprite1.setRotation(angle3);enemySprite1.setRotation(angle3);
+    enemySprite1.setRotation(angle3+Math.PI/2);
+
+    let angle4 = Phaser.Math.Angle.Between(enemySprite2.x,enemySprite2.y,playerSprite.x,playerSprite.y);
+    enemySprite2.setRotation(angle4);enemySprite2.setRotation(angle4);
+    enemySprite2.setRotation(angle4+Math.PI/2);
+
+    let angle5 = Phaser.Math.Angle.Between(enemySprite3.x,enemySprite3.y,playerSprite.x,playerSprite.y);
+    enemySprite3.setRotation(angle5);enemySprite3.setRotation(angle5);
+    enemySprite3.setRotation(angle5+Math.PI/2);
+
+    let angle6 = Phaser.Math.Angle.Between(enemySprite4.x,enemySprite4.y,playerSprite.x,playerSprite.y);
+    enemySprite4.setRotation(angle6);enemySprite4.setRotation(angle6);
+    enemySprite4.setRotation(angle6+Math.PI/2);
+
+    let angle7 = Phaser.Math.Angle.Between(enemySprite5.x,enemySprite5.y,playerSprite.x,playerSprite.y);
+    enemySprite5.setRotation(angle7);enemySprite5.setRotation(angle7);
+    enemySprite5.setRotation(angle7+Math.PI/2);
+
+    let angle8 = Phaser.Math.Angle.Between(enemySprite6.x,enemySprite6.y,playerSprite.x,playerSprite.y);
+    enemySprite6.setRotation(angle8);enemySprite6.setRotation(angle8);
+    enemySprite6.setRotation(angle8+Math.PI/2);
+
+    let angle9 = Phaser.Math.Angle.Between(enemySprite7.x,enemySprite7.y,playerSprite.x,playerSprite.y);
+    enemySprite7.setRotation(angle9);enemySprite7.setRotation(angle9);
+    enemySprite7.setRotation(angle9+Math.PI/2);
+
+    let angle10 = Phaser.Math.Angle.Between(enemySprite8.x,enemySprite8.y,playerSprite.x,playerSprite.y);
+    enemySprite.setRotation(angle10);enemySprite8.setRotation(angle10);
+    enemySprite.setRotation(angle10+Math.PI/2);
+
+    let angle11 = Phaser.Math.Angle.Between(enemySprite9.x,enemySprite9.y,playerSprite.x,playerSprite.y);
+    enemySprite9.setRotation(angle11);enemySprite9.setRotation(angle11);
+    enemySprite9.setRotation(angle11+Math.PI/2);
+
+    let angle12 = Phaser.Math.Angle.Between(enemySprite10.x,enemySprite10.y,playerSprite.x,playerSprite.y);
+    enemySprite10.setRotation(angle12);enemySprite10.setRotation(angle12);
+    enemySprite10.setRotation(angle12+Math.PI/2);
+
 
     this.keys = this.input.keyboard.addKeys(
         {up:Phaser.Input.Keyboard.KeyCodes.W,
@@ -181,8 +244,73 @@ function update(){
     }
 }
 
-function destroy(playerBullet,enemySprite) {
+function destroy(playerBullet,enemySprite,) {
+
     enemySprite.disableBody(true,true);
+    playerBullet.disableBody(true,true);
+    control=false;
+}
+function destroy(playerBullet,enemySprite1,) {
+
+    enemySprite1.disableBody(true,true);
+    playerBullet.disableBody(true,true);
+    control=false;
+}
+
+function destroy(playerBullet,enemySprite2,) {
+
+    enemySprite2.disableBody(true,true);
+    playerBullet.disableBody(true,true);
+    control=false;
+}
+function destroy(playerBullet,enemySprite3,) {
+
+    enemySprite3.disableBody(true,true);
+    playerBullet.disableBody(true,true);
+    control=false;
+}
+
+function destroy(playerBullet,enemySprite4,) {
+
+    enemySprite4.disableBody(true,true);
+    playerBullet.disableBody(true,true);
+    control=false;
+}
+
+function destroy(playerBullet,enemySprite5,) {
+
+    enemySprite5.disableBody(true,true);
+    playerBullet.disableBody(true,true);
+    control=false;
+}
+
+function destroy(playerBullet,enemySprite6,) {
+
+    enemySprite6.disableBody(true,true);
+    playerBullet.disableBody(true,true);
+    control=false;
+}
+function destroy(playerBullet,enemySprite7,) {
+
+    enemySprite7.disableBody(true,true);
+    playerBullet.disableBody(true,true);
+    control=false;
+}
+function destroy(playerBullet,enemySprite8,) {
+
+    enemySprite8.disableBody(true,true);
+    playerBullet.disableBody(true,true);
+    control=false;
+}
+function destroy(playerBullet,enemySprite9,) {
+
+    enemySprite9.disableBody(true,true);
+    playerBullet.disableBody(true,true);
+    control=false;
+}
+function destroy(playerBullet,enemySprite10,) {
+
+    enemySprite10.disableBody(true,true);
     playerBullet.disableBody(true,true);
     control=false;
 }
