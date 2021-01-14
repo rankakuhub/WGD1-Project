@@ -26,7 +26,7 @@ function preload() {
     this.load.image('walls', '../assets/images/Level1_Walls.png');
     this.load.image('player', '../assets/images/MainCharacterAim.png');
     this.load.image('enemy', '../assets/images/EnemyAim.png');
-
+    this.load.image('deadEnemy', '../assets/images/EnemyDead.png');
     //objects load
     this.load.image('arcade1', '../assets/images/Arcade1.png');
     this.load.image('arcade2', '../assets/images/Arcade2.png');
@@ -86,6 +86,7 @@ let enemySprite7;
 let enemySprite8;
 let enemySprite9;
 let enemySprite10;
+let enemyDead;
 
 let score = 0;
 let scoreText;
@@ -96,43 +97,6 @@ let worldBounds;
 
 function create() {
     this.add.image(0,0, 'ground').setOrigin(0,0);
-    playerSprite = this.physics.add.sprite(130, 445, 'player');
-    playerSprite.setScale(0.15);
-
-    wallsCollider = this.physics.add.staticGroup();
-    wallsCollider.create(0, 0, 'walls');
-    wallsCollider = this.add.image(0,0, 'walls').setOrigin(0,0);
-    this.physics.add.collider(playerSprite, wallsCollider);
-
-    scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });
-
-    playerBullet = this.physics.add.sprite(playerSprite.x,playerSprite.y,'bullet');
-    playerBullet.setScale(0)
-    mouse = this.input.mousePointer;
-
-    //enemy spam...
-    enemySprite = this.physics.add.sprite(180, 350, 'enemy');
-    enemySprite.setScale(0.15);
-    enemySprite1 = this.physics.add.sprite(290, 280, 'enemy');
-    enemySprite1.setScale(0.15);
-    enemySprite2 = this.physics.add.sprite(310, 190, 'enemy');
-    enemySprite2.setScale(0.15);
-    enemySprite3 = this.physics.add.sprite(130, 230, 'enemy');
-    enemySprite3.setScale(0.15);
-    enemySprite4 = this.physics.add.sprite(205, 110, 'enemy');
-    enemySprite4.setScale(0.15);
-    enemySprite5 = this.physics.add.sprite(400, 235, 'enemy');
-    enemySprite5.setScale(0.15);
-    enemySprite6 = this.physics.add.sprite(460, 140, 'enemy');
-    enemySprite6.setScale(0.15);
-    enemySprite7 = this.physics.add.sprite(520, 110, 'enemy');
-    enemySprite7.setScale(0.15);
-    enemySprite8 = this.physics.add.sprite(740, 40, 'enemy');
-    enemySprite8.setScale(0.15);
-    enemySprite9 = this.physics.add.sprite(650, 375, 'enemy');
-    enemySprite9.setScale(0.15);
-    enemySprite10 = this.physics.add.sprite(450, 500, 'enemy');
-    enemySprite10.setScale(0.15);
 
     //objects
     arcadeSprite = this.physics.add.sprite(390, 105, 'arcade1');
@@ -186,18 +150,55 @@ function create() {
     dinningSprite = this.physics.add.sprite(220, 195, 'table');
     dinningSprite.setScale(0.2);
 
+    playerSprite = this.physics.add.sprite(130, 445, 'player');
+    playerSprite.setScale(0.15);
+
+    wallsCollider = this.physics.add.staticGroup();
+    wallsCollider.create(0, 0, 'walls');
+    wallsCollider = this.add.image(0,0, 'walls').setOrigin(0,0);
+
+    scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });
+
+    playerBullet = this.physics.add.sprite(playerSprite.x,playerSprite.y,'bullet');
+    playerBullet.setScale(0)
+    mouse = this.input.mousePointer;
+
+    //enemy spam...
+    enemySprite = this.physics.add.sprite(180, 350, 'enemy');
+    enemySprite.setScale(0.15);
+    enemySprite1 = this.physics.add.sprite(290, 280, 'enemy');
+    enemySprite1.setScale(0.15);
+    enemySprite2 = this.physics.add.sprite(310, 190, 'enemy');
+    enemySprite2.setScale(0.15);
+    enemySprite3 = this.physics.add.sprite(130, 230, 'enemy');
+    enemySprite3.setScale(0.15);
+    enemySprite4 = this.physics.add.sprite(205, 110, 'enemy');
+    enemySprite4.setScale(0.15);
+    enemySprite5 = this.physics.add.sprite(400, 235, 'enemy');
+    enemySprite5.setScale(0.15);
+    enemySprite6 = this.physics.add.sprite(460, 140, 'enemy');
+    enemySprite6.setScale(0.15);
+    enemySprite7 = this.physics.add.sprite(520, 110, 'enemy');
+    enemySprite7.setScale(0.15);
+    enemySprite8 = this.physics.add.sprite(740, 40, 'enemy');
+    enemySprite8.setScale(0.15);
+    enemySprite9 = this.physics.add.sprite(650, 375, 'enemy');
+    enemySprite9.setScale(0.15);
+    enemySprite10 = this.physics.add.sprite(450, 500, 'enemy');
+    enemySprite10.setScale(0.15);
 
 
     this.keys = this.input.keyboard.createCursorKeys();
     this.cameras.main.startFollow(playerSprite);
     this.cameras.main.zoom = 3;
     inputCursor = this.input;
-   // wallsCollider.setImmovable(true);
+
     playerSprite.setCollideWorldBounds(true);
+    playerSprite.setBounce(2);
 
-   // this.physics.add.collider(playerSprite, wallsCollider);
-
+    this.physics.add.collider(playerSprite, wallsCollider);
     worldBounds = this.physics.world.bounds;
+
 }
 
 function update(){
@@ -302,6 +303,8 @@ function destroy(playerBullet,enemySprite,) {
 
     enemySprite.disableBody(true,true);
     playerBullet.disableBody(true,true);
+    enemyDead = this.physics.add.sprite(enemySprite.x, enemySprite.y, 'deadEnemy');
+    enemyDead.setScale(0.12);
     control=false;
     score += 10;
     scoreText.setText('Score: ' + score);
