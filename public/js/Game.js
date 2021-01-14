@@ -33,15 +33,32 @@ function preload() {
     this.load.image('arcade3', '../assets/images/Arcade3.png');
     this.load.image('arcade4', '../assets/images/Arcade4.png');
     this.load.image('arcade5', '../assets/images/Arcade5.png');
+
     this.load.image('freezer', '../assets/images/Freezer.png');
+    this.load.image('kitchentop', '../assets/images/Kitchen.png');
     this.load.image('toilet', '../assets/images/Pooper.png');
+    this.load.image('sink2', '../assets/images/Sink2.png');
+
+    this.load.image('bed', '../assets/images/Bed.png');
+    this.load.image('counter', '../assets/images/SideCounter.png');
+
+    this.load.image('desk', '../assets/images/Desk.png');
+    this.load.image('seat', '../assets/images/Seat1.png');
+    this.load.image('bookshelf', '../assets/images/Bookshelf.png');
+    this.load.image('drink', '../assets/images/DrinkTable.png');
+
+    this.load.image('tv', '../assets/images/TV.png');
+    this.load.image('sofa1', '../assets/images/Sofa1.png');
+    this.load.image('seat2', '../assets/images/LivingRoomSeat.png');
+    this.load.image('sofa2', '../assets/images/Sofa2.png');
+
 
     this.load.image('sink', '../assets/images/Sink.png');
     this.load.image('table', '../assets/images/Table.png');
 
     this.load.image('bullet', '../assets/images/Bullet1.png');
 
-
+    //load map
     this.load.json('map', '../assets/tilemaps/Level1.json');
 
 }
@@ -54,6 +71,10 @@ let arcadeSprite
 let bathroomSprite
 let kitchenSprite
 let dinningSprite
+let bedroomSprite
+let officeSprite
+let lounge1Sprite
+let lounge2Sprite
 
 let enemySprite1
 let enemySprite2
@@ -90,7 +111,7 @@ function create() {
     mouse = this.input.mousePointer;
 
     //enemy spam...
-    enemySprite = this.physics.add.sprite(130, 350, 'enemy');
+    enemySprite = this.physics.add.sprite(180, 350, 'enemy');
     enemySprite.setScale(0.15);
     enemySprite1 = this.physics.add.sprite(290, 280, 'enemy');
     enemySprite1.setScale(0.15);
@@ -98,11 +119,11 @@ function create() {
     enemySprite2.setScale(0.15);
     enemySprite3 = this.physics.add.sprite(130, 230, 'enemy');
     enemySprite3.setScale(0.15);
-    enemySprite4 = this.physics.add.sprite(50, 90, 'enemy');
+    enemySprite4 = this.physics.add.sprite(205, 110, 'enemy');
     enemySprite4.setScale(0.15);
     enemySprite5 = this.physics.add.sprite(400, 235, 'enemy');
     enemySprite5.setScale(0.15);
-    enemySprite6 = this.physics.add.sprite(460, 120, 'enemy');
+    enemySprite6 = this.physics.add.sprite(460, 140, 'enemy');
     enemySprite6.setScale(0.15);
     enemySprite7 = this.physics.add.sprite(520, 110, 'enemy');
     enemySprite7.setScale(0.15);
@@ -130,11 +151,42 @@ function create() {
     bathroomSprite = this.physics.add.sprite(660, 63, 'sink');
     bathroomSprite.setScale(0.35);
 
+    bedroomSprite = this.physics.add.sprite(780, 40, 'bed');
+    bedroomSprite.setScale(0.35);
+    bedroomSprite = this.physics.add.sprite(694, 20, 'counter');
+    bedroomSprite.setScale(0.2);
+
+    officeSprite = this.physics.add.sprite(710, 185, 'desk');
+    officeSprite.setScale(0.27);
+    officeSprite = this.physics.add.sprite(740, 185, 'seat');
+    officeSprite.setScale(0.27);
+    officeSprite = this.physics.add.sprite(630, 160, 'bookshelf');
+    officeSprite.setScale(0.4);
+    officeSprite = this.physics.add.sprite(600, 270, 'drink');
+    officeSprite.setScale(0.4);
+
+    lounge1Sprite = this.physics.add.sprite(120, 320, 'sofa2');
+    lounge1Sprite.setScale(0.35);
+    lounge1Sprite = this.physics.add.sprite(275, 360, 'seat2');
+    lounge1Sprite.setScale(0.27);
+
+    lounge2Sprite = this.physics.add.sprite(550, 508, 'tv');
+    lounge2Sprite.setScale(0.4);
+    lounge2Sprite = this.physics.add.sprite(550, 430, 'sofa1');
+    lounge2Sprite.setScale(0.35);
+
+
     kitchenSprite = this.physics.add.sprite(205, 95, 'freezer');
+    kitchenSprite.setScale(0.5);
+    kitchenSprite = this.physics.add.sprite(90, 112, 'kitchentop');
+    kitchenSprite.setScale(0.5);
+    kitchenSprite = this.physics.add.sprite(100, 85, 'sink2');
     kitchenSprite.setScale(0.5);
 
     dinningSprite = this.physics.add.sprite(220, 195, 'table');
     dinningSprite.setScale(0.2);
+
+
 
     this.keys = this.input.keyboard.createCursorKeys();
     this.cameras.main.startFollow(playerSprite);
