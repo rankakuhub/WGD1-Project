@@ -26,7 +26,6 @@ function preload() {
     this.load.image('walls', '../assets/images/Level1_Walls.png');
     this.load.image('player', '../assets/images/MainCharacterAim.png');
     this.load.image('enemy', '../assets/images/EnemyAim.png');
-    this.load.image('enemyDead', '../assets/images/EnemyDead.png');
 
     //objects load
     this.load.image('arcade1', '../assets/images/Arcade1.png');
@@ -65,7 +64,7 @@ function preload() {
 }
 
 let inputCursor;
-let wallsCollider;
+let wallsCollider
 let playerSprite;
 let enemySprite;
 let arcadeSprite;
@@ -88,7 +87,8 @@ let enemySprite8;
 let enemySprite9;
 let enemySprite10;
 
-let enemyDead;
+let score = 0;
+let scoreText;
 let playerBullet;
 let mouse;
 let control = false;
@@ -96,18 +96,45 @@ let worldBounds;
 
 function create() {
     this.add.image(0,0, 'ground').setOrigin(0,0);
+    playerSprite = this.physics.add.sprite(130, 445, 'player');
+    playerSprite.setScale(0.15);
 
-    bathroomSprite = this.physics.add.sprite(580, 33, 'toilet');
-    bathroomSprite.setScale(0.35);
-    bathroomSprite = this.physics.add.sprite(660, 63, 'sink');
-    bathroomSprite.setScale(0.35);
+    wallsCollider = this.physics.add.staticGroup();
+    wallsCollider.create(0, 0, 'walls');
+    wallsCollider = this.add.image(0,0, 'walls').setOrigin(0,0);
+    this.physics.add.collider(playerSprite, wallsCollider);
 
-    kitchenSprite = this.physics.add.sprite(205, 95, 'freezer');
-    kitchenSprite.setScale(0.5);
+    scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });
 
-    dinningSprite = this.physics.add.sprite(220, 195, 'table');
-    dinningSprite.setScale(0.2);
+    playerBullet = this.physics.add.sprite(playerSprite.x,playerSprite.y,'bullet');
+    playerBullet.setScale(0)
+    mouse = this.input.mousePointer;
 
+    //enemy spam...
+    enemySprite = this.physics.add.sprite(180, 350, 'enemy');
+    enemySprite.setScale(0.15);
+    enemySprite1 = this.physics.add.sprite(290, 280, 'enemy');
+    enemySprite1.setScale(0.15);
+    enemySprite2 = this.physics.add.sprite(310, 190, 'enemy');
+    enemySprite2.setScale(0.15);
+    enemySprite3 = this.physics.add.sprite(130, 230, 'enemy');
+    enemySprite3.setScale(0.15);
+    enemySprite4 = this.physics.add.sprite(205, 110, 'enemy');
+    enemySprite4.setScale(0.15);
+    enemySprite5 = this.physics.add.sprite(400, 235, 'enemy');
+    enemySprite5.setScale(0.15);
+    enemySprite6 = this.physics.add.sprite(460, 140, 'enemy');
+    enemySprite6.setScale(0.15);
+    enemySprite7 = this.physics.add.sprite(520, 110, 'enemy');
+    enemySprite7.setScale(0.15);
+    enemySprite8 = this.physics.add.sprite(740, 40, 'enemy');
+    enemySprite8.setScale(0.15);
+    enemySprite9 = this.physics.add.sprite(650, 375, 'enemy');
+    enemySprite9.setScale(0.15);
+    enemySprite10 = this.physics.add.sprite(450, 500, 'enemy');
+    enemySprite10.setScale(0.15);
+
+    //objects
     arcadeSprite = this.physics.add.sprite(390, 105, 'arcade1');
     arcadeSprite.setScale(0.5);
     arcadeSprite = this.physics.add.sprite(460, 105, 'arcade2');
@@ -159,107 +186,16 @@ function create() {
     dinningSprite = this.physics.add.sprite(220, 195, 'table');
     dinningSprite.setScale(0.2);
 
-    bathroomSprite = this.physics.add.sprite(580, 33, 'toilet');
-    bathroomSprite.setScale(0.35);
-    bathroomSprite = this.physics.add.sprite(660, 63, 'sink');
-    bathroomSprite.setScale(0.35);
 
-    bedroomSprite = this.physics.add.sprite(780, 40, 'bed');
-    bedroomSprite.setScale(0.35);
-    bedroomSprite = this.physics.add.sprite(694, 20, 'counter');
-    bedroomSprite.setScale(0.2);
-
-    officeSprite = this.physics.add.sprite(710, 185, 'desk');
-    officeSprite.setScale(0.27);
-    officeSprite = this.physics.add.sprite(740, 185, 'seat');
-    officeSprite.setScale(0.27);
-    officeSprite = this.physics.add.sprite(630, 160, 'bookshelf');
-    officeSprite.setScale(0.4);
-    officeSprite = this.physics.add.sprite(600, 270, 'drink');
-    officeSprite.setScale(0.4);
-
-    lounge1Sprite = this.physics.add.sprite(120, 320, 'sofa2');
-    lounge1Sprite.setScale(0.35);
-    lounge1Sprite = this.physics.add.sprite(275, 360, 'seat2');
-    lounge1Sprite.setScale(0.27);
-
-    lounge2Sprite = this.physics.add.sprite(550, 508, 'tv');
-    lounge2Sprite.setScale(0.4);
-    lounge2Sprite = this.physics.add.sprite(550, 430, 'sofa1');
-    lounge2Sprite.setScale(0.35);
-
-    kitchenSprite = this.physics.add.sprite(205, 95, 'freezer');
-    kitchenSprite.setScale(0.5);
-    kitchenSprite = this.physics.add.sprite(90, 112, 'kitchentop');
-    kitchenSprite.setScale(0.5);
-    kitchenSprite = this.physics.add.sprite(100, 85, 'sink2');
-    kitchenSprite.setScale(0.5);
-
-    dinningSprite = this.physics.add.sprite(220, 195, 'table');
-    dinningSprite.setScale(0.2);
-
-    playerSprite = this.physics.add.sprite(130, 445, 'player');
-    playerSprite.setScale(0.15);
-
-    //enemyDead.enableBody(false, false);
-
-    wallsCollider = this.physics.add.staticGroup();
-    wallsCollider.create(0, 0, 'walls');
-    wallsCollider = this.add.image(0,0, 'walls').setOrigin(0,0);
-    this.physics.add.collider(playerSprite, wallsCollider, function
-        (_playerSprite, _wallsCollider){
-
-    });
-
-
-    playerBullet = this.physics.add.sprite(playerSprite.x,playerSprite.y,'bullet');
-    playerBullet.setScale(0)
-    mouse = this.input.mousePointer;
-
-    //enemy spam...
-    enemySprite = this.physics.add.sprite(180, 350, 'enemy');
-    enemySprite.setScale(0.15);
-    enemySprite1 = this.physics.add.sprite(290, 280, 'enemy');
-    enemySprite1.setScale(0.15);
-    enemySprite2 = this.physics.add.sprite(310, 190, 'enemy');
-    enemySprite2.setScale(0.15);
-    enemySprite3 = this.physics.add.sprite(130, 230, 'enemy');
-    enemySprite3.setScale(0.15);
-    enemySprite4 = this.physics.add.sprite(205, 110, 'enemy');
-    enemySprite4.setScale(0.15);
-    enemySprite5 = this.physics.add.sprite(400, 235, 'enemy');
-    enemySprite5.setScale(0.15);
-    enemySprite6 = this.physics.add.sprite(460, 140, 'enemy');
-    enemySprite6.setScale(0.15);
-    enemySprite7 = this.physics.add.sprite(520, 110, 'enemy');
-    enemySprite7.setScale(0.15);
-    enemySprite8 = this.physics.add.sprite(740, 40, 'enemy');
-    enemySprite8.setScale(0.15);
-    enemySprite9 = this.physics.add.sprite(650, 375, 'enemy');
-    enemySprite9.setScale(0.15);
-    enemySprite10 = this.physics.add.sprite(450, 500, 'enemy');
-    enemySprite10.setScale(0.15);
 
     this.keys = this.input.keyboard.createCursorKeys();
     this.cameras.main.startFollow(playerSprite);
     this.cameras.main.zoom = 3;
     inputCursor = this.input;
    // wallsCollider.setImmovable(true);
-   // playerSprite.setCollideWorldBounds(true);
+    playerSprite.setCollideWorldBounds(true);
 
-    let canvas = this.sys.canvas;
-    canvas.style.cursor = 'none';
-    let mouseHideTO = 0;
-    canvas.style.cursor = 'none';
-    canvas.addEventListener('mousemove', () => {
-        canvas.style.cursor = 'none';
-        clearTimeout(mouseHideTO);
-        mouseHideTO = setTimeout(() => {
-            canvas.style.cursor = 'none';
-        }, 1000);
-    });
-
-   this.physics.add.collider(playerSprite, wallsCollider);
+   // this.physics.add.collider(playerSprite, wallsCollider);
 
     worldBounds = this.physics.world.bounds;
 }
@@ -362,11 +298,11 @@ function update(){
     }
 }
 
-function destroy(playerBullet,enemySprite) {
+function destroy(playerBullet,enemySprite,) {
 
     enemySprite.disableBody(true,true);
     playerBullet.disableBody(true,true);
-    //enemyDead = this.game.add.sprite(130, 450, 'enemyDead');
-   // enemyDead.setScale(0.13);
     control=false;
+    score += 10;
+    scoreText.setText('Score: ' + score);
 }
