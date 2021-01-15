@@ -20,13 +20,21 @@
 </header>
 
 <style>
-    h3 {text-align: center;}
+    h3 {
+        text-align: center;
+    }
 
-    p {text-align: center;}
+    p {
+        text-align: center;
+    }
 
-    div {text-align: center;}
+    div {
+        text-align: center;
+    }
 
-    footer {text-align: center;}
+    footer {
+        text-align: center;
+    }
 </style>
 
 <div class="content">
@@ -41,49 +49,50 @@
              alt="placeholder.png"/>
 
         <p>
-            <div id="assetContent" class="contentContent">
+        <div id="assetContent" class="contentContent">
             To begin our development of our game, we have researched assets from various games within the genre to give
             us an idea of the type of art-style and direction we want to take our game in. 'Hotline Miami' really stood
             out to us with both the gameplay and art-style, we are aiming to mimic this sort of look and feel within our
             game.<br></br>
-            We have decided to create our own assets using tools such as 'Pixelorama' or 'Aseprite' which allowed us to create the
-            environment tiles that we brought over to 'Tiled' and created our own tilesheet by placing them into a tilemap
-            and exporting it as an image. With our new tilesheet we began placing the tiles into the scene, ensuring they
+            We have decided to create our own assets using tools such as 'Pixelorama' or 'Aseprite' which allowed us to
+            create the
+            environment tiles that we brought over to 'Tiled' and created our own tilesheet by placing them into a
+            tilemap
+            and exporting it as an image. With our new tilesheet we began placing the tiles into the scene, ensuring
+            they
             are on the correct layers which allows us to implement the walls with ease.<br> </br>
-            The level we have created has been carefully implemented by following the the sketches we incorporated within our game design document. After creating
+            The level we have created has been carefully implemented by following the the sketches we incorporated
+            within our game design document. After creating
             the map, we exported it as both an image and a json file. We then began creating the background objects and
-            character sprites, using 'Aseprite' that allowed us to create the player and enemies spritesheets which shows their
-            life and death poses, along with arcade machines and other objects to help bring some life to the environment.
-    </div>
+            character sprites, using 'Aseprite' that allowed us to create the player and enemies spritesheets which
+            shows their
+            life and death poses, along with arcade machines and other objects to help bring some life to the
+            environment.
+        </div>
         </p>
 
         <h3 style="color:white">Implementing Assets</h3>
         <img id="devPlaceholder2" class="contentContent imageContent" src="./../content/images/AllSprites.png"
              alt="placeholder.png"/>
+
         <p>
-            Bibendum at varius vel pharetra. Tincidunt nunc pulvinar sapien et ligula. Curabitur vitae nunc sed velit
-            dignissim sodales. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Quis eleifend quam adipiscing
-            vitae. Enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra. Amet mattis vulputate enim
-            nulla aliquet porttitor. Dolor sit amet consectetur adipiscing elit duis tristique sollicitudin nibh. Hac
-            habitasse platea dictumst quisque. Aenean et tortor at risus viverra adipiscing at in. Tristique sollicitudin
-            nibh sit amet commodo nulla facilisi nullam vehicula. Scelerisque viverra mauris in aliquam sem fringilla.
-            Ultricies leo integer malesuada nunc vel risus commodo viverra. Massa id neque aliquam vestibulum.
+        <div id="ImplementingContent" class="contentContent">
+            After Kyle and I created the assets, we began implementing the sprites and other game objects into the
+            scene, using the load and create functions but the images were too large for the game so we had to resize
+            the images and layer them correctly so the player doesn't disappear under them. Once we had the level setup,
+            we began to add some functionality to the player starting with the movement which we originally had as the
+            arrow keys and was later changed to WASD as it felt more natural. <br></br>
 
-            Tincidunt lobortis feugiat vivamus at augue. Risus pretium quam vulputate dignissim suspendisse. Commodo
-            sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Turpis egestas sed tempus urna
-            et pharetra. Et netus et malesuada fames ac turpis egestas integer eget. Tristique nulla aliquet enim tortor
-            at. Tortor condimentum lacinia quis vel eros donec. Diam donec adipiscing tristique risus nec. Rhoncus dolor
-            purus non enim. Velit egestas dui id ornare arcu odio ut sem nulla. At urna condimentum mattis pellentesque
-            id nibh tortor id. Sapien et ligula ullamcorper malesuada proin libero. Vel turpis nunc eget lorem.
-            Elementum tempus egestas sed sed risus pretium quam.
+            Now with the player knowing around the
+            environment, we had to allow the player to look around as it is necessary for our shooting mechanic later in
+            development, we also reused this code to get the enemies to look at the player when you move around the
+            environment. We implemented the shooting mechanic but we had to adjust it from our previous idea of limited
+            ammo to infinite ammo with a cool-down, this makes the game feel more arcade like. <br> </br>
 
-            Vitae semper quis lectus nulla at. Nisi est sit amet facilisis. Elit scelerisque mauris pellentesque
-            pulvinar. Consequat nisl vel pretium lectus quam id leo in. Sed adipiscing diam donec adipiscing.
-            Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Non consectetur a erat nam
-            at lectus urna. Leo vel orci porta non pulvinar. Adipiscing elit duis tristique sollicitudin nibh sit amet
-            commodo nulla. Et molestie ac feugiat sed lectus. Etiam non quam lacus suspendisse faucibus interdum posuere.
-            Orci a scelerisque purus semper eget duis. Pellentesque sit amet porttitor eget dolor morbi. Porttitor lacus
-            luctus accumsan tortor posuere ac ut consequat. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus.
+            We have also created an
+            enemy death sprite that appears when they are shot, allowing the game to feel a little realistic as they
+            don't just disappear.
+    </div>
         </p>
     </div>
 

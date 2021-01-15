@@ -85,6 +85,11 @@ body {
     margin-right: 200px;
     margin-left: 200px;
 }
+
+#ImplementingContent{
+    margin-right: 300px;
+    margin-left: 300px;
+}
 #devPlaceholder {
     position: center;
     width: 35%;
