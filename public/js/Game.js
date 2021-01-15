@@ -301,6 +301,8 @@ function update(){
     enemySprite10.setRotation(angle12+Math.PI/2);
 
 
+
+
     this.keys = this.input.keyboard.addKeys(
         {up:Phaser.Input.Keyboard.KeyCodes.W,
             down:Phaser.Input.Keyboard.KeyCodes.S,
