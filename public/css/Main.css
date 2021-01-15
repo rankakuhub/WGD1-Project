@@ -74,11 +74,14 @@ body {
     margin-left: 1150px;
 }
 
-#placeholder {
-    position: absolute;
-    width: 25%;
-    top: 20%;
+#video {
+    position: fixed;
+    width: 40%;
+    top: 25%;
     right: 65%;
+    left: 5%;
+
+
 }
 
 #assetContent{

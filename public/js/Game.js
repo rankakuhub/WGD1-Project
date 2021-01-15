@@ -58,6 +58,7 @@ function preload() {
     this.load.image('table', '../assets/images/Table.png');
 
     this.load.image('bullet', '../assets/images/Bullet1.png');
+    this.load.audio('music','../assets/images/.mp4');
 
     //load map
     this.load.json('map', '../assets/tilemaps/Level1.json');
@@ -95,6 +96,11 @@ let playerBullet;
 let mouse;
 let control = false;
 let worldBounds;
+
+let sound = this.sound.add('background');
+
+sound.stop();
+sound.play();
 
 
 function create() {
@@ -164,6 +170,7 @@ function create() {
 
     playerBullet = this.physics.add.sprite(playerSprite.x,playerSprite.y,'bullet');
     playerBullet.setScale(0)
+
     mouse = this.input.mousePointer;
 
     //enemy spam...
@@ -222,6 +229,7 @@ function update(){
         this.physics.moveTo(playerBullet,inputCursor.x,inputCursor.y, 250);
         playerBullet.setScale(0.2);
         control = true;
+
     }
 
     if(playerBullet.x > worldBounds.width || playerBullet.y > worldBounds.height ||playerBullet.x < 0 || playerBullet.y < 0)
@@ -322,6 +330,7 @@ function update(){
         playerSprite.y += 1.5;
     }
 }
+
 
 function destroy(playerBullet,enemySprite,) {
 
