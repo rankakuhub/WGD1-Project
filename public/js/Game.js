@@ -58,7 +58,7 @@ function preload() {
     this.load.image('table', '../assets/images/Table.png');
 
     this.load.image('bullet', '../assets/images/Bullet1.png');
-    this.load.audio('music','../assets/images/.mp4');
+    this.load.audio('music','../assets/images/bensound-downtown.mp3');
 
     //load map
     this.load.json('map', '../assets/tilemaps/Level1.json');
@@ -96,15 +96,16 @@ let playerBullet;
 let mouse;
 let control = false;
 let worldBounds;
+let sound
 
-let sound = this.sound.add('background');
 
-sound.stop();
-sound.play();
 
 
 function create() {
     this.add.image(0,0, 'ground').setOrigin(0,0);
+    sound = this.sound.add('music');
+    sound.stop();
+    sound.play();
 
     //objects
     arcadeSprite = this.physics.add.sprite(390, 105, 'arcade1');
