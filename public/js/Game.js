@@ -27,6 +27,7 @@ function preload() {
     this.load.image('player', '../assets/images/MainCharacterAim.png');
     this.load.image('enemy', '../assets/images/EnemyAim.png');
     this.load.image('deadEnemy', '../assets/images/EnemyDead.png');
+
     //objects load
     this.load.image('arcade1', '../assets/images/Arcade1.png');
     this.load.image('arcade2', '../assets/images/Arcade2.png');
@@ -95,6 +96,7 @@ let mouse;
 let control = false;
 let worldBounds;
 
+
 function create() {
     this.add.image(0,0, 'ground').setOrigin(0,0);
 
@@ -157,7 +159,8 @@ function create() {
     wallsCollider.create(0, 0, 'walls');
     wallsCollider = this.add.image(0,0, 'walls').setOrigin(0,0);
 
-    scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });
+    scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#ffffff' });
+    scoreText.setScale(0.3);
 
     playerBullet = this.physics.add.sprite(playerSprite.x,playerSprite.y,'bullet');
     playerBullet.setScale(0)
@@ -199,9 +202,14 @@ function create() {
     this.physics.add.collider(playerSprite, wallsCollider);
     worldBounds = this.physics.world.bounds;
 
+
+
 }
 
 function update(){
+
+    scoreText.x = playerSprite.body.position.x;
+    scoreText.y = playerSprite.body.position.y;
 
     let angle = Phaser.Math.Angle.Between(playerSprite.x,playerSprite.y,inputCursor.x,inputCursor.y);
     playerSprite.setRotation(angle);playerSprite.setRotation(angle);
@@ -221,6 +229,21 @@ function update(){
         control = false;
     }
 
+//no cursor show
+    let canvas = this.sys.canvas;
+    canvas.style.cursor = 'none';
+
+    let mouseHideTO = 0;
+    canvas.style.cursor = 'none';
+    canvas.addEventListener('mousemove', () => {
+        canvas.style.cursor = 'default';
+        clearTimeout(mouseHideTO);
+        mouseHideTO = setTimeout(() => {
+            canvas.style.cursor = 'none';
+        }, 1000);
+    });
+
+
     this.physics.add.overlap(playerBullet, enemySprite, destroy,null,this);
     this.physics.add.overlap(playerBullet, enemySprite1, destroy,null,this);
     this.physics.add.overlap(playerBullet, enemySprite2, destroy,null,this);
@@ -232,7 +255,6 @@ function update(){
     this.physics.add.overlap(playerBullet, enemySprite8, destroy,null,this);
     this.physics.add.overlap(playerBullet, enemySprite9, destroy,null,this);
     this.physics.add.overlap(playerBullet, enemySprite10, destroy,null,this);
-
 
     let angle2 = Phaser.Math.Angle.Between(enemySprite.x,enemySprite.y,playerSprite.x,playerSprite.y);
     enemySprite.setRotation(angle2);enemySprite.setRotation(angle2);

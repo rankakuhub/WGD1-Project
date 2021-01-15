@@ -46,6 +46,7 @@ body {
 }
 
 
+
 #page-container {
     position: relative;
     min-height: 65vh;
@@ -78,6 +79,11 @@ body {
     width: 25%;
     top: 20%;
     right: 65%;
+}
+
+#assetContent{
+    margin-right: 200px;
+    margin-left: 200px;
 }
 #devPlaceholder {
     position: center;
