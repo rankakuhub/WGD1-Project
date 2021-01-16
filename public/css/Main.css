@@ -93,6 +93,11 @@ body {
     margin-right: 300px;
     margin-left: 300px;
 }
+
+#GroupContent{
+    margin-right: 400px;
+    margin-left: 400px;
+}
 #devPlaceholder {
     position: center;
     width: 35%;
@@ -100,6 +105,12 @@ body {
 
 }
 #devPlaceholder2 {
+    position: center;
+    width: 35%;
+    height: auto;
+}
+
+#devPlaceholder3 {
     position: center;
     width: 35%;
     height: auto;

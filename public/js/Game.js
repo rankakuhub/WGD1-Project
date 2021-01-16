@@ -103,7 +103,7 @@ let sound
 
 function create() {
     this.add.image(0,0, 'ground').setOrigin(0,0);
-    sound = this.sound.add('music');
+    sound = this.sound.add('music',{volume: 0.075});
     sound.stop();
     sound.play();
 
